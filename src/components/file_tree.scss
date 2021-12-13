@@ -1,0 +1,16 @@
+
+.layout-tab-container {
+  color: var(--base-icon-active-color);
+  margin: var(--base-pd-md) ;
+}
+
+.layout__resize--lr {
+  margin: var(--base-pd-md) calc(-1 * var(--base-pd-md));
+}
+
+.layout__resize:hover::after{
+  background-color: transparent;
+}
+// .layout__resize--lr{
+//   height: 90vh;
+// }
