@@ -1,3 +1,10 @@
+/* TODO 
+   - layout-container 只保留 editor 的margin 
+   - toolbar item hover 样式调整 
+   - font 调整
+   - 细节调整 
+ */
+
 /* all-transition */
 * {
   transition: all var(--base-transition) ease;
@@ -122,9 +129,12 @@ body,
 .layout-tab-bar,
 .layout-tab-container {
   margin-left: 0px;
+  margin-right: 0px;
 }
-.layout-tab-container .file-tree {
+.layout:nth-of-type(even) .layout-tab-container,
+.layout:nth-of-type(even) .layout-tab-bar {
   margin-left: var(--base-pd-md);
+  margin-right: var(--base-pd-md);
 }
 
 /* 统一 hover */
