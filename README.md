@@ -1,1 +1,1 @@
-# CATX-SiYuan-Theme
+# PinkMind-Theme
