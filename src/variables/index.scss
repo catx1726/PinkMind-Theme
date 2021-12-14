@@ -1,7 +1,8 @@
 :root {
   /* color */
   --base-dark-primary: rgba(25, 25, 25, 1);
-  --base-dark-second: rgba(37, 37, 37, 0.9);
+  --base-dark-second: rgba(35, 35, 35, 0.9);
+  --base-dark-third: rgba(45, 45, 45, 0.6);
   --base-accent-color: rgba(216, 191, 212, 1);
   --base-ft-color: rgba(225, 225, 225, 1);
 
@@ -9,7 +10,8 @@
   --base-pd-md: 12px;
   --base-radius: 6px;
   --base-transition: 0.3s;
-  --base-transition-props: 'color', 'background-color', 'padding', 'margin', 'width';
+  --base-transition-props: color, fill, background-color, border, padding, margin, width, height, opacity, transform,
+    top, right, bottom, left;
 
   /* font-family */
   --base-font-family: 'consolas';

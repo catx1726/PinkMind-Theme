@@ -8,6 +8,8 @@
 /* 🎨 variables */
 @import './variables/index.scss';
 
+@import './mixin/index.scss';
+
 /* 📮 common */
 @import './common/index.scss';
 
@@ -17,3 +19,4 @@
 @import './components/tag_bar.scss';
 @import './components/file_tree';
 @import './components/setting_entry';
+@import './components/editor.scss';

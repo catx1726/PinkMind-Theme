@@ -1,0 +1,9 @@
+@mixin custom-transition {
+  transition-property: var(--base-transition-props);
+  transition-duration: var(--base-transition);
+  transition-timing-function: ease;
+}
+
+@mixin custom-box-shadow {
+  box-shadow: 0px 0px 20px rgba(190, 190, 190, 0.1), 0 0px 20px rgba(190, 190, 190, 0.1);
+}
