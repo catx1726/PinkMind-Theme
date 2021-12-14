@@ -60,7 +60,7 @@ body,
 .popover__block.counter,
 .b3-menu__item,
 .protyle-breadcrumb__bar,
-.b3-tooltips svg {
+.protyle-background .b3-tooltips svg {
   color: var(--base-ft-color);
 }
 .b3-list--files {
@@ -153,7 +153,7 @@ body,
 }
 
 /* 统一 hover */
-.b3-tooltips:hover svg {
+.protyle-background .b3-tooltips:hover svg {
   color: var(--base-dark-primary);
 }
 .toolbar__item:hover,
