@@ -9,7 +9,8 @@
   --base-pd-md: 12px;
   --base-radius: 6px;
   --base-transition: 0.3s;
+  --base-transition-props: 'color', 'background-color', 'padding', 'margin', 'width';
 
   /* font-family */
-  --base-font-family:'consolas';
+  --base-font-family: 'consolas';
 }

@@ -7,7 +7,7 @@
 
 /* all-transition */
 * {
-  transition: all var(--base-transition) ease;
+  transition: var(--base-transition-props) var(--base-transition) ease;
 }
 
 /* body-boder */
@@ -128,11 +128,11 @@ body,
 }
 .layout-tab-bar,
 .layout-tab-container {
-  margin-left: 0px;
+  // margin-left: 0px;
   margin-right: 0px;
 }
-.layout:nth-of-type(even) .layout-tab-container,
-.layout:nth-of-type(even) .layout-tab-bar {
+.layout__center .layout-tab-container,
+.layout__center .layout-tab-bar {
   margin-left: var(--base-pd-md);
   margin-right: var(--base-pd-md);
 }
