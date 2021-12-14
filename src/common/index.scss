@@ -1,7 +1,19 @@
+/* all-transition */
 * {
   transition: all var(--base-transition) ease;
 }
 
+/* body-boder */
+body.body--win32 {
+  border: 0px solid transparent;
+  background-color: var(--base-dark-primary);
+}
+
+/* 统一背景色 */
+.layout-tab-bar,
+.layout-tab-container {
+  background-color: transparent;
+}
 .dock,
 .toolbar,
 .file-tree,
@@ -9,56 +21,121 @@
 .protyle-title__input,
 .protyle-breadcrumb,
 .layout-tab-bar .item,
-.layout__empty {
-  background-color: var(--base-side-bar-bg);
+.layout__empty,
+.block__icons,
+.b3-dialog__container,
+.b3-tab-container,
+.search__header .b3-text-filed--text {
+  background-color: var(--base-dark-second);
+}
+.layout-tab-bar {
+  .item__text::after,
+  .item--focus .item__text::after,
+  .item:hover:not(.item--focus) .item__text::after {
+    background: transparent;
+    // background-color: transparent;
+  }
 }
 
+/* 统一字体颜色 */
+body,
 .dock__item,
-.toolbar__item {
-  color: var(--base-icon-default-color);
-}
-
+.toolbar__item,
 .protyle,
 .protyle-title__input,
 .protyle-breadcrumb,
+.layout-tab-container,
 .b3-list-item__text,
 .layout-tab-bar .item,
+.b3-list-item,
+.b3-form__icon {
+  color: var(--base-ft-color);
+}
+
+/* 统一点缀色 */
 .layout-tab-bar,
-.dock__item:hover,
-.toolbar__item:hover,
-.dock__item:hover:not(.dock__item--active),
 .b3-list-item__action,
 .b3-list-item__toggle {
-  color: var(--base-icon-active-color);
+  fill: var(--base-accent-color);
+  color: var(--base-accent-color);
+}
+.layout-tab-bar,
+.b3-list--files {
+  .item--focus,
+  .item:hover:not(.item--focus),
+  .b3-list-item:hover,
+  .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) {
+    background-color: var(--base-dark-primary) !important;
+  }
+}
+.b3-list--background {
+  .b3-list-item:hover:not(.b3-list-item--focus),
+  .b3-list-item--focus {
+    background-color: var(--base-dark-primary);
+  }
 }
 
-.b3-list--files .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom),
-.b3-list--files .b3-list-item:hover {
-  background-color: var(--base-ft-color) !important;
-}
-
-.b3-list-item__action:hover,
-.b3-list-item__toggle:hover {
-}
-
+/* 统一 radius */
 .file-tree,
 .protyle,
 .layout__empty,
 .layout-tab-bar,
-.layout__resize--lr {
+.layout__resize--lr,
+.body.body--win32 {
   box-sizing: border-box;
   border-radius: var(--base-radius);
 }
-
 .layout-tab-bar {
   border-radius: var(--base-radius) var(--base-radius) 0 0;
 }
-
 .protyle {
   border-radius: var(--base-radius);
   border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
-
 .protyle-breadcrumb {
   border-radius: 0 0 var(--base-radius) var(--base-radius);
+}
+
+/* 统一 宽 / 高 度 */
+.dock__item,
+.dock.dock--vertical,
+.dock--vertical .dock__item,
+.toolbar__item {
+  width: calc(3 * var(--base-pd-md));
+}
+.dock--vertical .dock__item {
+  padding: var(--base-pd-md) 0;
+}
+.toolbar,
+.toolbar__item {
+  height: calc(3 * var(--base-pd-md));
+}
+.toolbar__item {
+  padding: 0 var(--base-pd-md);
+}
+
+/* 统一边距 */
+.layout-tab-container {
+  margin: var(--base-pd-md);
+}
+.layout-tab-bar,
+.layout-tab-container {
+  margin-left: 0px;
+}
+.layout-tab-container .file-tree {
+  margin-left: var(--base-pd-md);
+}
+
+/* 统一 hover */
+.toolbar__item:hover,
+.dock__item:hover,
+.dock__item:hover:not(.dock__item--active) {
+  color: var(--base-dark-primary);
+  background-color: var(--base-ft-color);
+}
+
+/* 统一字体 */
+body {
+  font-family: var(--base-font-family);
 }

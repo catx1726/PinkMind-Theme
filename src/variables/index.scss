@@ -1,14 +1,15 @@
 :root {
   /* color */
-  --base-ft-color: rgb(114, 114, 114);
-  --base-side-bar-bg: rgba(0, 0, 0, 1);
-  --base-icon-active-color: rgb(190, 190, 190);
-  --base-icon-default-color: var(--base-ft-color);
-  --base-header-bar-bg: var(--base-side-bar-bg);
-  --base-tree-bg: var(--base-side-bar-bg);
+  --base-dark-primary: rgba(25, 25, 25, 1);
+  --base-dark-second: rgba(37, 37, 37, 0.9);
+  --base-accent-color: rgba(216, 191, 212, 1);
+  --base-ft-color: rgba(225, 225, 225, 1);
 
   /* utils */
-  --base-pd-md: 6px;
+  --base-pd-md: 12px;
   --base-radius: 6px;
-  --base-transition: 0.2s;
+  --base-transition: 0.3s;
+
+  /* font-family */
+  --base-font-family:'consolas';
 }
