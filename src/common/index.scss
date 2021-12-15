@@ -23,7 +23,8 @@ body.body--win32 {
 .b3-dialog__container,
 .b3-tab-container,
 .search__header .b3-text-filed--text,
-.b3-menu {
+.b3-menu,
+.protyle-icons {
   background-color: var(--base-dark-second);
 }
 .b3-tooltips::after {
@@ -84,7 +85,8 @@ body,
 .layout__empty,
 .layout-tab-bar,
 .layout__resize--lr,
-.body.body--win32 {
+.body.body--win32,
+.protyle-icons {
   box-sizing: border-box;
   border-radius: var(--base-radius);
 }
@@ -124,6 +126,9 @@ body,
 }
 .toolbar__item {
   padding: calc(var(--base-pd-md) / 2) var(--base-pd-md);
+}
+.protyle-background {
+  min-height: calc(var(--base-pd-md) * 4);
 }
 // .protyle-icons {
 //   transform: scale(1.2);
@@ -193,7 +198,8 @@ body {
 /* 统一 transition */
 .layout-tab-container,
 .dock,
-.toolbar {
+.toolbar,
+.b3-dialog {
   .dock__item,
   .toolbar__item,
   .dock__item::after,
@@ -204,7 +210,10 @@ body {
   .b3-list-item__toggle--hl,
   .b3-list-item__action,
   .b3-tooltips::before,
-  .b3-tooltips::after {
+  .b3-tooltips::after,
+  .b3-dialog__container,
+  .b3-dialog__close,
+  .b3-label {
     transition-property: var(--base-transition-props);
     transition-duration: var(--base-transition);
     transition-timing-function: ease;
