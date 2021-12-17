@@ -1,0 +1,20 @@
+/* 统一 宽 / 高 度 */
+.dock__item,
+.dock.dock--vertical,
+.dock--vertical .dock__item,
+.toolbar__item {
+  width: calc(3 * var(--base-pd-md));
+}
+.dock--vertical .dock__item {
+  padding: var(--base-pd-md) 0;
+}
+.toolbar,
+.toolbar__item {
+  height: calc(3 * var(--base-pd-md));
+}
+.toolbar__item {
+  padding: calc(var(--base-pd-md) / 2) var(--base-pd-md);
+}
+.protyle-background {
+  min-height: calc(var(--base-pd-md) * 4);
+}
