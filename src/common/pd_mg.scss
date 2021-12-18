@@ -1,0 +1,22 @@
+/* 统一边距 */
+.protyle-icons > span {
+  padding: calc(var(--base-pd-md) / 2) var(--base-pd-md);
+}
+.layout-tab-container {
+  margin: var(--base-pd-md);
+}
+.layout-tab-bar,
+.layout-tab-container {
+  // margin-left: 0px;
+  margin-right: 0px;
+}
+.layout__center .layout-tab-container,
+.layout__center .layout-tab-bar {
+  margin-left: var(--base-pd-md);
+  margin-right: var(--base-pd-md);
+}
+.b3-list--files {
+  .b3-list-item {
+    padding: calc(var(--base-pd-md) / 2) calc(var(--base-pd-md) * 2);
+  }
+}
