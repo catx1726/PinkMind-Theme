@@ -3,48 +3,12 @@
 @import './radius.scss';
 @import './wh.scss';
 @import './pd_mg.scss';
+@import './hover_transition.scss';
 
 /* body-boder */
 body.body--win32 {
   border: 0px solid transparent;
   background-color: var(--base-dark-primary);
-}
-
-
-// .protyle-icons {
-//   transform: scale(1.2);
-// }
-
-
-/* 统一 hover */
-.protyle-background .b3-tooltips:hover svg {
-  color: var(--base-dark-primary);
-}
-.toolbar__item:hover,
-.dock__item:hover,
-.dock__item:hover:not(.dock__item--active) {
-  color: var(--base-dark-primary);
-  background-color: var(--base-ft-color);
-}
-.layout-tab-bar,
-.b3-list--files {
-  .b3-list-item__toggle--hl:hover,
-  .b3-list-item__action:hover {
-    color: var(--base-accent-color);
-    background-color: transparent;
-  }
-  .item--focus,
-  .item:hover:not(.item--focus),
-  .b3-list-item:hover,
-  .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) {
-    background-color: var(--base-dark-primary) !important;
-  }
-}
-.b3-list--background {
-  .b3-list-item:hover:not(.b3-list-item--focus),
-  .b3-list-item--focus {
-    background-color: var(--base-dark-primary);
-  }
 }
 
 /* 统一字体 */
@@ -54,39 +18,8 @@ body {
   font-family: var(--base-font-family);
 }
 
-/* 统一 transition */
-.layout-tab-container,
-.dock,
-.toolbar,
-.b3-dialog {
-  .dock__item,
-  .toolbar__item,
-  .dock__item::after,
-  .dock__item::before,
-  .toolbar__item::after,
-  .toolbar__item::before,
-  .b3-list-item,
-  .b3-list-item__toggle--hl,
-  .b3-list-item__action,
-  .b3-tooltips::before,
-  .b3-tooltips::after,
-  .b3-dialog__container,
-  .b3-dialog__close,
-  .b3-label {
-    transition-property: var(--base-transition-props);
-    transition-duration: var(--base-transition);
-    transition-timing-function: ease;
-  }
-}
-.protyle {
-  * {
-    transition-property: var(--base-transition-props);
-    transition-duration: 0.2s;
-    transition-timing-function: ease;
-  }
-}
-
-/* 统一 box-shadow */
-.file-tree {
-  // @include custom-box-shadow();
+/* 杂物堆放🎁 */
+.b3-tooltips__sw {
+  text-align: center;
+  padding: calc(var(--base-pd-md) + 4.5px) 0;
 }

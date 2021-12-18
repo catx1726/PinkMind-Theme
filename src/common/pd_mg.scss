@@ -17,6 +17,7 @@
 }
 .b3-list--files {
   .b3-list-item {
-    padding: calc(var(--base-pd-md) / 2) calc(var(--base-pd-md) * 2);
+    padding: calc(var(--base-pd-md) / 2);
+    margin: calc(var(--base-pd-md) / 2) calc(var(--base-pd-md) * 2);
   }
 }

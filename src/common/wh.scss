@@ -1,20 +1,24 @@
 /* 统一 宽 / 高 度 */
 .dock__item,
 .dock.dock--vertical,
-.dock--vertical .dock__item,
-.toolbar__item {
-  width: calc(3 * var(--base-pd-md));
+.dock--vertical .dock__item {
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: center;
+  width: calc(4 * var(--base-pd-md));
 }
 .dock--vertical .dock__item {
-  padding: var(--base-pd-md) 0;
+  height: calc(4 * var(--base-pd-md));
 }
 .toolbar,
 .toolbar__item {
-  height: calc(3 * var(--base-pd-md));
+  height: calc(4 * var(--base-pd-md));
 }
 .toolbar__item {
-  padding: calc(var(--base-pd-md) / 2) var(--base-pd-md);
+  padding: 0;
+  justify-content: center;
+  width: calc(4 * var(--base-pd-md));
 }
 .protyle-background {
-  min-height: calc(var(--base-pd-md) * 4);
+  min-height: calc(var(--base-pd-md) * 5);
 }
