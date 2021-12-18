@@ -86,7 +86,8 @@ body,
 .layout-tab-bar,
 .layout__resize--lr,
 .body.body--win32,
-.protyle-icons {
+.protyle-icons,
+.b3-list-item {
   box-sizing: border-box;
   border-radius: var(--base-radius);
 }
@@ -154,6 +155,7 @@ body,
 .b3-list--files {
   .b3-list-item {
     padding: calc(var(--base-pd-md) / 2) calc(var(--base-pd-md) * 2);
+    margin: var(--base-pd-md);
   }
 }
 
