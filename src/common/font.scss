@@ -25,13 +25,14 @@ body,
 }
 
 /* 统一字体大小 */
-body{
+body {
   font-size: calc(var(--base-ft-size) * 1.6);
 }
 .dock svg,
 .toolbar__item svg,
 .b3-list-item__icon svg,
-.b3-list-item__icon img {
+.b3-list-item__icon img,
+.b3-menu__icon {
   font-size: calc(var(--base-ft-size) * 1.8);
   height: calc(var(--base-ft-size) * 1.5);
   width: calc(var(--base-ft-size) * 1.5);

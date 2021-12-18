@@ -6,7 +6,10 @@
 .layout__resize--lr,
 .body.body--win32,
 .protyle-icons,
-.b3-list-item {
+.b3-list-item,
+.b3-menu,
+.protyle-util,
+.b3-dialog__container {
   box-sizing: border-box;
   border-radius: var(--base-radius);
 }
@@ -28,4 +31,7 @@
 .protyle-icons > span:last-child {
   border-bottom-right-radius: var(--base-radius);
   border-top-right-radius: var(--base-radius);
+}
+.b3-dialog__container{
+  overflow: hidden;
 }

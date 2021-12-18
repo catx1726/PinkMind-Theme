@@ -28,12 +28,17 @@
     background-color: var(--base-dark-primary);
   }
 }
+.b3-menu .b3-menu__item:hover,
+.b3-menu__item--current {
+  background-color: var(--base-dark-primary);
+}
 
 /* 统一 transition */
 .layout-tab-container,
 .dock,
 .toolbar,
-.b3-dialog {
+.b3-dialog,
+.b3-menu {
   .dock__item,
   .toolbar__item,
   .dock__item::after,
@@ -47,7 +52,8 @@
   .b3-tooltips::after,
   .b3-dialog__container,
   .b3-dialog__close,
-  .b3-label {
+  .b3-label,
+  .b3-menu__item {
     transition-property: var(--base-transition-props);
     transition-duration: var(--base-transition);
     transition-timing-function: ease;
