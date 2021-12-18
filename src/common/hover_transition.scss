@@ -5,8 +5,8 @@
 .toolbar__item:hover,
 .dock__item:hover,
 .dock__item:hover:not(.dock__item--active) {
-  color: var(--base-dark-primary);
-  background-color: var(--base-ft-color);
+  color: var(--base-ft-color);
+  background-color: var(--base-dark-primary);
 }
 .layout-tab-bar,
 .b3-list--files {
