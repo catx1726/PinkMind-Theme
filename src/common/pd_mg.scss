@@ -19,6 +19,13 @@
   padding: calc(var(--base-pd-md) / 2);
   margin: calc(var(--base-pd-md) / 2) calc(var(--base-pd-md) * 2);
 }
+.b3-list--background {
+  align-items: center;
+  margin-top: var(--base-pd-md);
+  .b3-list-item {
+    margin:0 var(--base-pd-md);
+  }
+}
 .b3-menu .b3-menu__item {
   box-sizing: border-box;
   overflow: hidden;

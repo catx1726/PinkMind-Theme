@@ -14,7 +14,8 @@ body,
 .popover__block.counter,
 .b3-menu__item,
 .protyle-breadcrumb__bar,
-.protyle-background .b3-tooltips svg {
+.protyle-background .b3-tooltips svg,
+.b3-snackbar__content {
   color: var(--base-ft-color);
 }
 .b3-list--files {
