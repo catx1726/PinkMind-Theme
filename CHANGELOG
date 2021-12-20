@@ -1,0 +1,17 @@
+# 如何写 CHANGE-LOG
+
+> 作者: 陈旧
+>
+> 日期: 2021年12月16日
+
+- [CHANGELOG 参考文档](https://keepachangelog.com/zh-CN/1.0.0/)
+- [为什么不用 git log](https://keepachangelog.com/zh-CN/1.0.0/)
+
+
+# Unreleased
+- blur 实现磨砂效果 
+- 文档编写 
+
+# Release
+
+## TODO - V1.0 

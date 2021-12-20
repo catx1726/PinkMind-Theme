@@ -1,0 +1,68 @@
+/* 统一 hover */
+.protyle-background .b3-tooltips:hover svg {
+  color: var(--base-dark-primary);
+}
+.toolbar__item:hover,
+.dock__item:hover,
+.dock__item:hover:not(.dock__item--active) {
+  color: var(--base-ft-color);
+  background-color: var(--base-dark-primary);
+}
+.layout-tab-bar,
+.b3-list--files {
+  .b3-list-item__toggle--hl:hover,
+  .b3-list-item__action:hover {
+    color: var(--base-accent-color);
+    background-color: transparent;
+  }
+  .item--focus,
+  .item:hover:not(.item--focus),
+  .b3-list-item:hover,
+  .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) {
+    background-color: var(--base-dark-primary) !important;
+  }
+}
+.b3-list--background {
+  .b3-list-item:hover:not(.b3-list-item--focus),
+  .b3-list-item--focus {
+    background-color: var(--base-dark-primary);
+  }
+}
+.b3-menu .b3-menu__item:hover,
+.b3-menu__item--current {
+  background-color: var(--base-dark-primary);
+}
+
+/* 统一 transition */
+.layout-tab-container,
+.dock,
+.toolbar,
+.b3-dialog,
+.b3-menu {
+  .dock__item,
+  .toolbar__item,
+  .dock__item::after,
+  .dock__item::before,
+  .toolbar__item::after,
+  .toolbar__item::before,
+  .b3-list-item,
+  .b3-list-item__toggle--hl,
+  .b3-list-item__action,
+  .b3-tooltips::before,
+  .b3-tooltips::after,
+  .b3-dialog__container,
+  .b3-dialog__close,
+  .b3-label,
+  .b3-menu__item {
+    transition-property: var(--base-transition-props);
+    transition-duration: var(--base-transition);
+    transition-timing-function: ease;
+  }
+}
+.protyle {
+  * {
+    transition-property: var(--base-transition-props);
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+  }
+}

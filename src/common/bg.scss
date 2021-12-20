@@ -1,0 +1,43 @@
+/* 统一背景色 */
+.layout-tab-bar,
+.layout-tab-container {
+  background-color: transparent;
+}
+.layout-tab-bar .item {
+  background-color: var(--base-dark-third);
+}
+.dock,
+.toolbar,
+.file-tree,
+.protyle,
+.protyle-title__input,
+.protyle-breadcrumb,
+.layout__empty,
+.block__icons,
+.b3-dialog__container,
+.b3-tab-container,
+.search__header .b3-text-filed--text,
+.b3-menu,
+.protyle-icons,
+.b3-snackbar__content,
+.commonMenu,
+.b3-menu__item {
+  background-color: var(--base-dark-second);
+}
+.b3-tooltips::after {
+  background-color: var(--base-dark-third);
+}
+.b3-tooltips::before {
+  border-color: transparent;
+}
+.protyle-icons > span {
+  background-color: var(--base-dark-third);
+}
+.layout-tab-bar {
+  .item__text::after,
+  .item--focus .item__text::after,
+  .item:hover:not(.item--focus) .item__text::after {
+    background: transparent;
+    // background-color: transparent;
+  }
+}
