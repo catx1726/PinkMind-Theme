@@ -22,11 +22,17 @@
 .protyle-background {
   min-height: calc(var(--base-pd-md) * 5);
 }
-.protyle-wysiwyg,.protyle-title{
+.protyle-wysiwyg,
+.protyle-title {
   max-width: 700px;
-  margin: 0 auto !important;
 }
-.protyle-background__icon{
-  left: 30% !important;
-  transform: translateX(-50%);
+@media screen and (min-width: 800px) {
+  .protyle-wysiwyg,
+  .protyle-title {
+    max-width: 700px;
+    margin: 0 auto !important;
+  }
+}
+.protyle-background__icon {
+  // left: clamp(96px, 30%, 50%) ;
 }

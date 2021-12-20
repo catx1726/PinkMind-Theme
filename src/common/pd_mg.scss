@@ -2,6 +2,9 @@
 .protyle-icons > span {
   padding: calc(var(--base-pd-md) / 2) var(--base-pd-md);
 }
+.protyle-icons{
+  margin-left: 0;
+}
 .layout-tab-container {
   margin: var(--base-pd-md);
 }
