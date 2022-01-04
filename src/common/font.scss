@@ -10,7 +10,7 @@ body,
 .layout-tab-bar .item,
 .b3-list-item,
 .b3-form__icon,
-.b3-list--files .b3-list-item__toggle,
+.file-tree .b3-list-item__toggle,
 .popover__block.counter,
 .b3-menu__item,
 .protyle-breadcrumb__bar,
@@ -18,7 +18,7 @@ body,
 .b3-snackbar__content {
   color: var(--base-ft-color);
 }
-.b3-list--files {
+.file-tree {
   .b3-list-item__toggle--hl,
   .b3-list-item__action {
     color: var(--base-ft-color);
