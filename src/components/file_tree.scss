@@ -1,4 +1,4 @@
-.file-tree{
+.file-tree {
   font-weight: 400;
 }
 .layout__resize--lr {
@@ -6,6 +6,9 @@
   margin: var(--base-pd-md) -3px;
 }
 
+.layout__resize:after,
 .layout__resize:hover::after {
+  color: transparent;
+  border-color: transparent;
   background-color: transparent;
 }

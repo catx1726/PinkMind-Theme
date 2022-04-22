@@ -3,10 +3,14 @@
   margin-right: var(--base-pd-md);
   .item {
     margin-right: 1px;
-    border-right:1px solid var(--base-ft-color);
+    border-right: 1px solid var(--base-ft-color);
   }
   .item:last-child {
     margin-right: 0;
     border-right: transparent;
   }
+}
+
+.layout__wnd--active .layout-tab-bar .item--focus {
+  box-shadow: none;
 }
