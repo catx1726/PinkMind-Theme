@@ -21,8 +21,12 @@ body {
 /* 杂物堆放🎁 */
 .b3-tooltips__sw {
   text-align: center;
-  padding: calc(var(--base-pd-md) + 4.5px) 0;
+  // padding: calc(var(--base-pd-md) + 4.5px) 0;
 }
 .protyle-icons{
   z-index: 10;
+}
+.block__icon.b3-tooltips{
+  justify-content: center;
+  width: calc(var(--base-pd-md) * 2);
 }
