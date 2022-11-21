@@ -13,6 +13,10 @@
   box-sizing: border-box;
   border-radius: var(--base-radius);
 }
+.dock__item--activefocus,
+.dock__item--active,.dock__item {
+  border-radius: 0;
+}
 .layout-tab-bar {
   border-radius: var(--base-radius) var(--base-radius) 0 0;
 }

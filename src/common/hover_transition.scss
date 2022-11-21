@@ -4,7 +4,15 @@
 }
 .toolbar__item:hover,
 .dock__item:hover,
-.dock__item:hover:not(.dock__item--active) {
+.dock__item:hover:not(.dock__item--active),
+.toolbar__item:not(.toolbar__item--disabled):not(.toolbar__item--close):hover,
+.toolbar__item--active,
+.protyle-breadcrumb__item:hover,
+.protyle-breadcrumb__item--active,
+.block__icon:hover:not([disabled]):not(.ft__primary),
+.block__icon--active,
+.protyle-icon:hover,
+.protyle-background .b3-tooltips:hover svg {
   color: var(--base-ft-color);
   background-color: var(--base-dark-primary);
 }
@@ -29,7 +37,9 @@
   }
 }
 .b3-menu .b3-menu__item:hover,
-.b3-menu__item--current {
+.b3-menu__item--current,
+.status #barDock .b3-menu__item:hover,
+.status #barHelp .b3-menu__item:hover {
   background-color: var(--base-dark-primary);
 }
 

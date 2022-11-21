@@ -2,7 +2,7 @@
 .protyle-icons > span {
   padding: calc(var(--base-pd-md) / 2) var(--base-pd-md);
 }
-.protyle-icons{
+.protyle-icons {
   margin-left: 0;
 }
 .layout-tab-container {
@@ -17,6 +17,14 @@
 .layout__center .layout-tab-bar {
   margin-left: var(--base-pd-md);
   margin-right: var(--base-pd-md);
+}
+.layout-tab-bar:first-child {
+  margin-right: 0;
+  border-top-right-radius: 0;
+}
+.layout-tab-bar:last-child {
+  margin-left: 0;
+  border-top-left-radius: 0;
 }
 .file-tree .b3-list-item {
   padding: calc(var(--base-pd-md) / 2);

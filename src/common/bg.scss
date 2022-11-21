@@ -21,8 +21,16 @@
 .protyle-icons,
 .b3-snackbar__content,
 .commonMenu,
-.b3-menu__item {
+.b3-menu__item,
+.status {
   background-color: var(--base-dark-second);
+}
+
+.dock__item--activefocus,
+.dock__item--active,
+.layout__wnd--active .layout-tab-bar .item--focus:after,
+.b3-list--background .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) {
+  background-color: var(--base-dark-primary) !important;
 }
 .b3-tooltips::after {
   background-color: var(--base-dark-third);
