@@ -48,3 +48,6 @@
 .b3-menu__item--readonly .b3-menu__label {
   line-height: calc(var(--base-pd-md) * 1.5);
 }
+.b3-menu__item--show .b3-menu__submenu {
+  border-color: transparent;
+}

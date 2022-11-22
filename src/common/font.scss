@@ -15,7 +15,8 @@ body,
 .b3-menu__item,
 .protyle-breadcrumb__bar,
 .protyle-background .b3-tooltips svg,
-.b3-snackbar__content {
+.b3-snackbar__content,
+.b3-button--outline {
   color: var(--base-ft-color);
 }
 .file-tree {
@@ -46,3 +47,7 @@ body {
 //   fill: var(--base-accent-color);
 //   color: var(--base-accent-color);
 // }
+
+.b3-button--outline {
+  box-shadow: inset 0 0 0 1px var(--base-ft-color);
+}

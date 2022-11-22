@@ -1,11 +1,14 @@
 /* 统一背景色 */
-.layout-tab-bar,
-.layout-tab-container {
-  background-color: transparent;
+
+// primary
+.dock__item--activefocus,
+.dock__item--active,
+.layout__wnd--active .layout-tab-bar .item--focus:after,
+.b3-list--background .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) {
+  background-color: var(--base-dark-primary) !important;
 }
-.layout-tab-bar .item {
-  background-color: var(--base-dark-third);
-}
+
+// second
 .dock,
 .toolbar,
 .file-tree,
@@ -22,24 +25,26 @@
 .b3-snackbar__content,
 .commonMenu,
 .b3-menu__item,
-.status {
+.status,
+.layout-tab-bar .item,
+.b3-menu__item--show .b3-menu__submenu {
   background-color: var(--base-dark-second);
 }
 
-.dock__item--activefocus,
-.dock__item--active,
-.layout__wnd--active .layout-tab-bar .item--focus:after,
-.b3-list--background .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) {
-  background-color: var(--base-dark-primary) !important;
-}
-.b3-tooltips::after {
-  background-color: var(--base-dark-third);
-}
-.b3-tooltips::before {
-  border-color: transparent;
-}
+// third
+.b3-tooltips::after,
 .protyle-icons > span {
   background-color: var(--base-dark-third);
+}
+
+// transparent
+.layout-tab-container {
+  background-color: transparent;
+}
+.b3-tooltips::before,
+.layout-tab-bar,
+.layout-tab-container {
+  border-color: transparent;
 }
 .layout-tab-bar {
   .item__text::after,
